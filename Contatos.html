@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
 
-    <h1 id="pimba">Roger Games</h1>
-    <h3 id="pimba">Contatos</h3>
+    
     <style>
         
         ul {
@@ -40,10 +39,92 @@
             background-color: #04AA6D;
             }
         
-        #pimba{color: white;text-align: center;}
         
         
+        #divBusca{
+            background-color:#2F4F4F;
+            border:solid 1px;
+            border-radius:15px;
+            width:300px;
+            }
+
+        #txtBusca{
+            float:left;
+            background-color:transparent;
+            padding-left:5px;
+            font-style:italic;
+            font-size:18px;
+            border:none;
+            height:32px;
+            width:260px;
+            }
         
+            * {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: grey;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+}
+    
+    
+    
+    
     </style>
 
 
@@ -70,9 +151,61 @@
         
     </ul>
     
+    <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="Lupa.png"  width="30px"      id="btnBusca" alt="Buscar"/>
+    </div>
     
-    
-    
+    <h1 style="color: white;text-align: center;">Formulário</h1>
+    <h3 style="color: white;text-align: center;"> Nos conte a sua experiência em nosso site</h3>
+
+<div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+    <div class="col-25">
+        <label for="fname">Nome</label>
+    </div>
+    <div class="col-75">
+        <input type="text" id="fname" name="Nome" placeholder="Seu Nome..">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="lname">Sobrenome</label>
+    </div>
+    <div class="col-75">
+        <input type="text" id="lname" name="Sobrenome" placeholder="Seu Sobrenome..">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="country">País</label>
+    </div>
+    <div class="col-75">
+        <select id="country" name="País">
+        <option value="australia">Australia</option>
+        <option value="canadá">Canadá</option>
+        <option value="EUA">EUA</option>
+        <option value="Brasil">Brasil</option>
+        
+        </select>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="subject">Mensagem</label>
+    </div>
+    <div class="col-75">
+        <textarea id="subject" name="Mensagem" placeholder="Escreva alguma Coisa.." style="height:200px"></textarea>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</div>
+
     
     
 </body>

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
 
-    <h1 id="pimba">Roger Games</h1>
-    <h3 id="pimba">Games</h3>
+
     <style>
+
         
         ul {
             list-style-type: none;
@@ -40,10 +40,33 @@
             background-color: #04AA6D;
             }
         
-        #pimba{color: white;text-align: center;}
         
         
+        #divBusca{
+            background-color:#2F4F4F;
+            border:solid 1px;
+            border-radius:15px;
+            width:300px;
+            }
+
+        #txtBusca{
+            float:left;
+            background-color:transparent;
+            padding-left:5px;
+            font-style:italic;
+            font-size:18px;
+            border:none;
+            height:32px;
+            width:260px;
+            }
         
+    
+        #img{
+            width: 7cm;
+            height: 9cm;
+        }
+    
+    
     </style>
 
 
@@ -61,6 +84,8 @@
     
     
     
+    
+    
     <ul>
         
         <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
@@ -70,10 +95,66 @@
         
     </ul>
     
+    <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="Lupa.png"  width="30px"      id="btnBusca" alt="Buscar"/>
+    </div>
+    
+    <h1 style="color: white;">Tabela de Games</h1>
+    
+    <table style="border: 2px solid darkblue;border-spacing: 25px;">
+        <tr>
+
+            <th>
+                <img src="choralonge.jpg" id="img"    alt="farcry 3">
+            </th>
+            <th>
+                <img src="bom de guerra.webp" id="img"    alt="god of war">
+            </th>
+            <th>
+                <img src="leviosa.webp" id="img"    alt="hogwarts Legacy">
+            </th>
+            <th>
+                <img src="tropa de elite.jpg" id="img"    alt="gta san andreas tropa de elite">
+            </th>
+            
+        <tr>
+            <th>   <h3 style="color: white;">R$10</h3></th>
+            <th>   <h3 style="color: white;">R$150</h3></th>
+            <th>   <h3 style="color: white;">R$120</h3></th>
+            <th>   <h3 style="color: white;">R$5</h3></th>
+        </tr>
+        <tr>
+            <th>
+                <img src="minecraft.jpg" id="img"    alt="minecraft">
+            </th>
+            <th>
+                <img src="mirage.webp" id="img"    alt="assassins creed mirage">
+            </th>
+            <th>
+                <img src="mk2.jpg" id="img"    alt="call of duty mk2">
+            </th>
+            <th>
+                <img src="re2.png" id="img"    alt="resident evil 2 remake">
+            </th>
+        </tr>
+        <tr>
+            <th>   <h3 style="color: white;">R$15</h3></th>
+            <th>   <h3 style="color: white;">R$250</h3></th>
+            <th>   <h3 style="color: white;">R$80</h3></th>
+            <th>   <h3 style="color: white;">R$40</h3></th>
+        </tr>
     
     
     
     
     
+    </table>
+
+
+
+
+
+
 </body>
 </html>

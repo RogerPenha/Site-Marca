@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>roger Games</title>
 
-    <h1 id="pimba">Roger Games</h1>
-    <h3 id="pimba">vamos nos divertir juntos</h3>
+
     <style>
         
         ul {
@@ -40,10 +40,29 @@
             background-color: #04AA6D;
             }
         
-        #pimba{color: white;text-align: center;}
         
         
+        #divBusca{
+            background-color:#2F4F4F;
+            border:solid 1px;
+            border-radius:15px;
+            width:300px;
+            }
+
+        #txtBusca{
+            float:left;
+            background-color:transparent;
+            padding-left:5px;
+            font-style:italic;
+            font-size:18px;
+            border:none;
+            height:32px;
+            width:260px;
+            }
         
+    
+        
+    
     </style>
 
 
@@ -71,9 +90,55 @@
     </ul>
     
     
+    <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="Lupa.png"  width="30px"      id="btnBusca" alt="Buscar"/>
+    </div>
+    
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1">
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+        
+        <div class="slide">
+            <img src="bomba patch.jpg" alt="bomba patch">
+        </div>
+        
+        
+        <div class="slide">
+            <img src="cogumelo.webp" alt="cogumelo do mário">
+        </div>
+        
+        <div class="slide">
+            <img src="polystation.jpg" alt="polystation">
+        </div>
+        
     
     
     
     
+    </div>
+
+        <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+
+
+
+
+        </div>
+    
+    
+    
+    </div>
+    
+
+
+
+
+
+
 </body>
 </html>
